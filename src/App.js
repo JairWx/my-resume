@@ -12,18 +12,19 @@ import Project from './component/Project';
 let ss = <h1>Hello, world</h1>;
 class App extends Component {
   render() {
+    console.info("sss");
     return (
       <div>
-        <p class="last-modified">最后更新时间：2019年03月</p>
-        <div class="content">
+        <p className="last-modified">最后更新时间：2019年03月{this.props.value.project[0].name}</p>
+        <div className="content">
           <Header />
-          <div class="content-bd">
+          <div className="content-bd">
             <Skill />
             <Practice />
-            <Project />
+            <Project value={this.props.value.project}/>
           </div>
         </div>
-        <a class="pdf" href="resume.pdf"><i class="iconfont icon-pdf"></i> PDF简历</a>
+        <a className="pdf" href="resume.pdf"><i class="iconfont icon-pdf"></i> PDF简历</a>
       </div>
     );
   }
