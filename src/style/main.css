@@ -265,6 +265,17 @@ a {
   border-top: 1px solid #ededed;
   vertical-align: middle;
 }
+
+.content-bd .item-hd-bottom {
+  display: inline-block;
+  position: absolute;
+  /*top: 50%;*/
+  width: 70%;
+  height: 0;
+  border-top: 1px solid #ededed;
+  /*vertical-align: middle;*/
+}
+
 .content-bd .section-title-l {
   left: 0;
 }

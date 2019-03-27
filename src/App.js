@@ -9,13 +9,12 @@ import Project from './component/Project';
 //export 当初两个类
 //https://www.cnblogs.com/ifannie/p/8664851.html
 //https://resume.congm.in/
-let ss = <h1>Hello, world</h1>;
+//let ss = <h1>Hello, world</h1>;
 class App extends Component {
   render() {
-    console.info("sss");
     return (
       <div>
-        <p className="last-modified">最后更新时间：2019年03月{this.props.value.project[0].name}</p>
+        <p className="last-modified">最后更新时间：2019年03月</p>
         <div className="content">
           <Header />
           <div className="content-bd">

@@ -17,12 +17,13 @@ function ProjectView(props){
                         <span class="item-time">{project.date}</span>
                         <h3 class="item-name">{project.name}</h3>
                     </header>
+                    <span class="item-hd-bottom"></span>
                     <div class="item-bd">
-                        <p>项目规模{project.scale}</p>
-                        <p>担任角色:{project.role}</p>
-                        <p>项目介绍:{project.introduction}</p>
-                        <p>开发技术:{project.tools}</p>
-                        <p>项目内容:</p>
+                        <p><b>项目规模:</b>{project.scale}</p>
+                        <p><b>担任角色:</b>{project.role}</p>
+                        <p><b>项目介绍:</b>{project.introduction}</p>
+                        <p><b>开发技术:</b>{project.tools}</p>
+                        <p><b>项目内容:</b></p>
                         <p>{project.content.map(function(value2,index){
                             return(<p>{index + 1}.{value2.value}</p>)
                         })}</p>
