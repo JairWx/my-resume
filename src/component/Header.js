@@ -9,7 +9,7 @@ class Header extends Component {
                 <div class="name">
                     <h1>温杰<small>Wen Jie</small></h1>
                 </div>
-                <div class="job">
+                <div className="job">
                     <h2>Java开发工程师</h2>
                 </div>
             </section>
